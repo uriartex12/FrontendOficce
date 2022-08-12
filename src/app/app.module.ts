@@ -17,6 +17,7 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { ContentAnimateDirective } from './shared/directives/content-animate.directive';
 import { TodoListComponent } from './apps/todo-list/todo-list.component';
 import { HabitacionComponent } from './habitacion/habitacion.component';
+import { EmpleadoComponent } from './empleado/empleado/empleado.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HabitacionComponent } from './habitacion/habitacion.component';
     TodoComponent,
     SpinnerComponent,
     ContentAnimateDirective,
-    HabitacionComponent
+    HabitacionComponent,
+    EmpleadoComponent
   ],
   imports: [
     BrowserModule,
