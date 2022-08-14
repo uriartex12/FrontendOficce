@@ -7,13 +7,13 @@
       </a>
     </li>
     <li class="nav-item" [ngClass]="{ 'active': reserva.isActive }">
-      <a class="nav-link" routerLink="#" routerLinkActive #reserva="routerLinkActive">
+      <a class="nav-link" routerLink="/reserva/reserva" routerLinkActive #reserva="routerLinkActive">
         <span class="menu-title">Reserva</span>
         <i class="mdi mdi-home menu-icon"></i>
       </a>
     </li>
     <li class="nav-item" [ngClass]="{ 'active': recepcion.isActive }">
-      <a class="nav-link" routerLink="#" routerLinkActive #recepcion="routerLinkActive">
+      <a class="nav-link" routerLink="/recepcion/recepcion" routerLinkActive #recepcion="routerLinkActive">
         <span class="menu-title">Recepción</span>
         <i class="mdi mdi-home menu-icon"></i>
       </a>
@@ -24,28 +24,14 @@
         <i class="mdi mdi-home menu-icon"></i>
       </a>
     </li>
-    <li class="nav-item" [ngClass]="{'active' : aperutacaja.isActive || cierrecaja.isActive || resumenliquid.isActive }">
-      <a class="nav-link" (click)="samplePagesCollapsed = !samplePagesCollapsed" aria-controls="ui-basic">
-        <span class="menu-title">Modulo Caja</span>
-        <i class="menu-arrow"></i>
-        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-      </a>
-      <div class="collapse" id="ui-basic" [ngbCollapse]="!samplePagesCollapsed">
-        <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" routerLink="#" routerLinkActive="active" #aperutacaja="routerLinkActive">Apertura Caja</a></li>
-          <li class="nav-item"> <a class="nav-link" routerLink="#" routerLinkActive="active" #cierrecaja="routerLinkActive">Cierre Caja</a></li>
-          <li class="nav-item"> <a class="nav-link" routerLink="#" routerLinkActive="active" #resumenliquid="routerLinkActive">Resuemen Liquidación</a></li>
-        </ul>
-      </div>
-    </li>
 
     <li class="nav-item" [ngClass]="{'active' : producto.isActive || vender.isActive }">
-      <a class="nav-link" (click)="samplePagesCollapsed = !samplePagesCollapsed" aria-controls="ui-basic">
+      <a class="nav-link" (click)="puntoventaCollapsed = !puntoventaCollapsed" [attr.aria-expanded]="puntoventaCollapsed" aria-controls="ui-basic">
         <span class="menu-title">Punto de Venta</span>
         <i class="menu-arrow"></i>
         <i class="mdi mdi-crosshairs-gps menu-icon"></i>
       </a>
-      <div class="collapse" id="ui-basic" [ngbCollapse]="!samplePagesCollapsed">
+      <div class="collapse" id="ui-basic" [ngbCollapse]="!puntoventaCollapsed">
         <ul class="nav flex-column sub-menu">
           <li class="nav-item"> <a class="nav-link" routerLink="#" routerLinkActive="active" #producto="routerLinkActive">Productos</a></li>
           <li class="nav-item"> <a class="nav-link" routerLink="#" routerLinkActive="active" #vender="routerLinkActive">Vender</a></li>
@@ -64,17 +50,17 @@
         <i class="mdi mdi-home menu-icon"></i>
       </a>
     </li>
-    <li class="nav-item" [ngClass]="{'active' : habitacion.isActive || categoria.isActive || niveles.isActive }">
-      <a class="nav-link" (click)="samplePagesCollapsed = !samplePagesCollapsed" aria-controls="ui-basic">
-        <span class="menu-title">Configuración</span>
+    <li class="nav-item" [ngClass]="{'active' : habitacion.isActive || categoria.isActive || pisos.isActive}">
+      <a class="nav-link" (click)="configuracionCollapsed = !configuracionCollapsed" [attr.aria-expanded]="configuracionCollapsed" aria-controls="ui-basic">
+        <span class="menu-title">Configuracion</span>
         <i class="menu-arrow"></i>
         <i class="mdi mdi-crosshairs-gps menu-icon"></i>
       </a>
-      <div class="collapse" id="ui-basic" [ngbCollapse]="!samplePagesCollapsed">
+      <div class="collapse" id="ui-basic" [ngbCollapse]="!configuracionCollapsed">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" routerLink="#" routerLinkActive="active" #habitacion="routerLinkActive">Habitaciones</a></li>
-          <li class="nav-item"> <a class="nav-link" routerLink="#" routerLinkActive="active" #categoria="routerLinkActive">Categorias</a></li>
-          <li class="nav-item"> <a class="nav-link" routerLink="#" routerLinkActive="active" #niveles="routerLinkActive">Niveles</a></li>
+          <li class="nav-item"> <a class="nav-link" routerLink="Configuracion/habitacion" routerLinkActive="active" #habitacion="routerLinkActive">Habitaciones</a></li>
+          <li class="nav-item"> <a class="nav-link" routerLink="Configuracion/categoria" routerLinkActive="active" #categoria="routerLinkActive">Categorias</a></li>
+          <li class="nav-item"> <a class="nav-link" routerLink="Configuracion/pisos" routerLinkActive="active" #pisos="routerLinkActive">Pisos</a></li>
         </ul>
       </div>
     </li>
@@ -85,12 +71,12 @@
       </a>
     </li>
     <li class="nav-item" [ngClass]="{'active' : reporteDiario.isActive || reporteRecep.isActive || reporteCaja.isActive || reporteMensual.isActive}">
-      <a class="nav-link" (click)="samplePagesCollapsed = !samplePagesCollapsed" aria-controls="ui-basic">
+      <a class="nav-link" (click)="reporteCollapsed = !reporteCollapsed " [attr.aria-expanded]="reporteCollapsed" aria-controls="ui-basic">
         <span class="menu-title">Reportes</span>
         <i class="menu-arrow"></i>
         <i class="mdi mdi-crosshairs-gps menu-icon"></i>
       </a>
-      <div class="collapse" id="ui-basic" [ngbCollapse]="!samplePagesCollapsed">
+      <div class="collapse" id="ui-basic" [ngbCollapse]="!reporteCollapsed ">
         <ul class="nav flex-column sub-menu">
           <li class="nav-item"> <a class="nav-link" routerLink="#" routerLinkActive="active" #reporteDiario="routerLinkActive">Reporte diario</a></li>
           <li class="nav-item"> <a class="nav-link" routerLink="#" routerLinkActive="active" #reporteRecep="routerLinkActive">Reporte recepcionista</a></li>
@@ -100,12 +86,12 @@
       </div>
     </li>
     <li class="nav-item" [ngClass]="{'active' : usuario.isActive }">
-      <a class="nav-link" (click)="uiBasicCollapsed = !uiBasicCollapsed" [attr.aria-expanded]="uiBasicCollapsed" aria-controls="ui-basic">
+      <a class="nav-link" (click)="administracionCollapsed = !administracionCollapsed" [attr.aria-expanded]="administracionCollapsed" aria-controls="ui-basic">
         <span class="menu-title">Administración</span>
         <i class="menu-arrow"></i>
         <i class="mdi mdi-crosshairs-gps menu-icon"></i>
       </a>
-      <div class="collapse" id="ui-basic" [ngbCollapse]="!uiBasicCollapsed">
+      <div class="collapse" id="ui-basic" [ngbCollapse]="!administracionCollapsed">
         <ul class="nav flex-column sub-menu">
           <li class="nav-item"> <a class="nav-link" routerLink="basic-ui/accordions" routerLinkActive="active" #usuario="routerLinkActive">Usuarios</a></li>
         </ul>
