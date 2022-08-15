@@ -9,19 +9,19 @@
     <li class="nav-item" [ngClass]="{ 'active': reserva.isActive }">
       <a class="nav-link" routerLink="/reserva/reserva" routerLinkActive #reserva="routerLinkActive">
         <span class="menu-title">Reserva</span>
-        <i class="mdi mdi-home menu-icon"></i>
+        <i class="mdi mdi-briefcase menu-icon"></i>
       </a>
     </li>
     <li class="nav-item" [ngClass]="{ 'active': recepcion.isActive }">
       <a class="nav-link" routerLink="/recepcion/recepcion" routerLinkActive #recepcion="routerLinkActive">
         <span class="menu-title">Recepción</span>
-        <i class="mdi mdi-home menu-icon"></i>
+        <i class="mdi mdi-home-modern menu-icon"></i>
       </a>
     </li>
     <li class="nav-item" [ngClass]="{ 'active': checkout.isActive }">
       <a class="nav-link" routerLink="#" routerLinkActive #checkout="routerLinkActive">
         <span class="menu-title">CheckOut</span>
-        <i class="mdi mdi-home menu-icon"></i>
+        <i class="mdi mdi-checkbox-marked menu-icon"></i>
       </a>
     </li>
 
@@ -29,7 +29,7 @@
       <a class="nav-link" (click)="puntoventaCollapsed = !puntoventaCollapsed" [attr.aria-expanded]="puntoventaCollapsed" aria-controls="ui-basic">
         <span class="menu-title">Punto de Venta</span>
         <i class="menu-arrow"></i>
-        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <i class="mdi mdi-store menu-icon"></i>
       </a>
       <div class="collapse" id="ui-basic" [ngbCollapse]="!puntoventaCollapsed">
         <ul class="nav flex-column sub-menu">
@@ -41,20 +41,20 @@
     <li class="nav-item" [ngClass]="{ 'active': egresos.isActive }">
       <a class="nav-link" routerLink="#" routerLinkActive #egresos="routerLinkActive">
         <span class="menu-title">Egresos</span>
-        <i class="mdi mdi-home menu-icon"></i>
+        <i class="mdi mdi-shopping-music menu-icon"></i>
       </a>
     </li>
     <li class="nav-item" [ngClass]="{ 'active': mensajes.isActive }">
       <a class="nav-link" routerLink="#" routerLinkActive #mensajes="routerLinkActive">
         <span class="menu-title">Mensajes</span>
-        <i class="mdi mdi-home menu-icon"></i>
+        <i class="mdi mdi-message-draw menu-icon"></i>
       </a>
     </li>
     <li class="nav-item" [ngClass]="{'active' : habitacion.isActive || categoria.isActive || pisos.isActive}">
       <a class="nav-link" (click)="configuracionCollapsed = !configuracionCollapsed" [attr.aria-expanded]="configuracionCollapsed" aria-controls="ui-basic">
         <span class="menu-title">Configuracion</span>
         <i class="menu-arrow"></i>
-        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <i class="mdi mdi-wrench menu-icon"></i>
       </a>
       <div class="collapse" id="ui-basic" [ngbCollapse]="!configuracionCollapsed">
         <ul class="nav flex-column sub-menu">
@@ -67,14 +67,14 @@
     <li class="nav-item" [ngClass]="{ 'active': clientes.isActive }">
       <a class="nav-link" routerLink="#" routerLinkActive #clientes="routerLinkActive">
         <span class="menu-title">Clientes</span>
-        <i class="mdi mdi-home menu-icon"></i>
+        <i class="mdi mdi-account-multiple-plus menu-icon"></i>
       </a>
     </li>
     <li class="nav-item" [ngClass]="{'active' : reporteDiario.isActive || reporteRecep.isActive || reporteCaja.isActive || reporteMensual.isActive}">
       <a class="nav-link" (click)="reporteCollapsed = !reporteCollapsed " [attr.aria-expanded]="reporteCollapsed" aria-controls="ui-basic">
         <span class="menu-title">Reportes</span>
         <i class="menu-arrow"></i>
-        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <i class="mdi mdi-chart-areaspline menu-icon"></i>
       </a>
       <div class="collapse" id="ui-basic" [ngbCollapse]="!reporteCollapsed ">
         <ul class="nav flex-column sub-menu">
@@ -89,7 +89,7 @@
       <a class="nav-link" (click)="administracionCollapsed = !administracionCollapsed" [attr.aria-expanded]="administracionCollapsed" aria-controls="ui-basic">
         <span class="menu-title">Administración</span>
         <i class="menu-arrow"></i>
-        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <i class="mdi mdi-book-multiple menu-icon"></i>
       </a>
       <div class="collapse" id="ui-basic" [ngbCollapse]="!administracionCollapsed">
         <ul class="nav flex-column sub-menu">
