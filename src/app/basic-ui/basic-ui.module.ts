@@ -34,7 +34,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AccordionsComponent, BadgesComponent, BreadcrumbsComponent, ButtonsComponent, DropdownsComponent, ModalsComponent, PaginationComponent, ProgressbarComponent, TabsComponent, TooltipsComponent, TypographyComponent, NotificationsComponent],
+  declarations: [AccordionsComponent],
   imports: [
     CommonModule,
     NgbModule,

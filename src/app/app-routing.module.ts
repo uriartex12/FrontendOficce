@@ -7,7 +7,9 @@ const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'basic-ui', loadChildren: () => import('./basic-ui/basic-ui.module').then(m => m.BasicUiModule) },
-  { path: 'Configuracion', loadChildren: () => import('./Configuracion/configuracion.module').then(m => m.ConfiguracionModule) },
+  { path: 'Configuracion', loadChildren: () => import('./componentes/Configuracion/configuracion.module').then(m => m.ConfiguracionModule) },
+  { path: 'reserva', loadChildren: () => import('./componentes/reserva/reserva.module').then(m => m.ReservaModule) },
+  { path: 'recepcion', loadChildren: () => import('./componentes/recepcion/recepcion.module').then(m => m.RecepcionModule) },
   { path: 'apps', loadChildren: () => import('./apps/apps.module').then(m => m.AppsModule) },
 ];
 

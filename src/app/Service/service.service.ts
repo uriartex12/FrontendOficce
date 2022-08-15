@@ -9,10 +9,10 @@ export class ServiceService {
 
   constructor(private http:HttpClient) { }
 
-  Url='http://localhost:8000/api/hotel';
+  Url='http://localhost:8000/api';
 
   listarHabitacion(){
-    return this.http.get<Habitacion[]>(this.Url+'/ListarHabitacion');
+    return this.http.get<Habitacion[]>(this.Url+'/hotel/ListarHabitacion');
   }
 
 }

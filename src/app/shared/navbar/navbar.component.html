@@ -18,28 +18,6 @@
       </form>
     </div>
     <ul class="navbar-nav navbar-nav-right">
-      <li class="nav-item nav-profile dropdown" ngbDropdown>
-        <a class="nav-link dropdown-toggle" id="profileDropdown" ngbDropdownToggle>
-          <div class="nav-profile-img">
-            <img src="assets/images/faces/face1.jpg" alt="image">
-            <span class="availability-status online"></span>
-          </div>
-          <div class="nav-profile-text">
-            <p class="mb-1 text-black">David Greymaax</p>
-          </div>
-        </a>
-        <div class="dropdown-menu navbar-dropdown" ngbDropdownMenu aria-labelledby="profileDropdown">
-          <a class="dropdown-item" href="javascript:;">
-            <i class="mdi mdi-cached mr-2 text-success"></i>
-            Activity Log
-          </a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="javascript:;">
-            <i class="mdi mdi-logout mr-2 text-primary"></i>
-            Signout
-          </a>
-        </div>
-      </li>
       <li class="nav-item dropdown" ngbDropdown>
         <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" ngbDropdownToggle>
           <i class="mdi mdi-email-outline"></i>
@@ -139,16 +117,28 @@
           <div class="dropdown-divider"></div>
           <h6 class="p-3 mb-0 text-center">See all notifications</h6>
         </div>
-      </li>
-      <li class="nav-item nav-logout d-none d-lg-block">
-        <a class="nav-link" href="javascript:;">
-          <i class="mdi mdi-power"></i>
+      </li>    
+      <li class="nav-item nav-profile dropdown" ngbDropdown>
+        <a class="nav-link dropdown-toggle" id="profileDropdown" ngbDropdownToggle>
+          <div class="nav-profile-img">
+            <img src="assets/images/faces/face1.jpg" alt="image">
+            <span class="availability-status online"></span>
+          </div>
+          <div class="nav-profile-text">
+            <p class="mb-1 text-black">David Greymaax</p>
+          </div>
         </a>
-      </li>
-      <li class="nav-item nav-settings d-none d-lg-block">
-        <a class="nav-link">
-          <i class="mdi mdi-format-line-spacing"></i>
-        </a>
+        <div class="dropdown-menu navbar-dropdown" ngbDropdownMenu aria-labelledby="profileDropdown">
+          <a class="dropdown-item" href="javascript:;">
+            <i class="mdi mdi-cached mr-2 text-success"></i>
+            Activity Log
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="javascript:;">
+            <i class="mdi mdi-logout mr-2 text-primary"></i>
+            Signout
+          </a>
+        </div>
       </li>
     </ul>
     <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" (click)="toggleOffcanvas()">
