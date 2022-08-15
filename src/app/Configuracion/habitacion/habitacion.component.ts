@@ -10,7 +10,7 @@ import {ServiceService}from '../../Service/service.service'
 })
 export class HabitacionComponent implements OnInit {
 
-  habitaciones:Habitacion[] | undefined;
+  habitaciones:Habitacion[];
   constructor(private service:ServiceService, private route:Router) { }
 
   ngOnInit(): void {
