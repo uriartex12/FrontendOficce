@@ -21,9 +21,14 @@
     font-size: $btn-font-size-lg;
   }
   &.btn-xs {
-    padding: $btn-padding-y-xs $btn-padding-x-xs;
-    font-size: $btn-font-size-xs;
+    padding: .50rem .2rem;
+    font-size: .875rem;
+    line-height: .5;
+    border-radius: .2rem;
+    border: 2px solid #f6f6f4;
+    margin-top: -5px;
   }
+
   /* Buttons with only icons */
   &.btn-icon {
     width: 42px;

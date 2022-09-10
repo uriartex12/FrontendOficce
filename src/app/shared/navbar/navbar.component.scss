@@ -6,7 +6,8 @@
 
 .navbar {
   font-family: $type1-light;
-  background: $navbar-bg;
+  background-color: rgb(246, 246, 244);
+  border-bottom: 7px solid rgb(123, 123, 123);
   transition:background $action-transition-duration $action-transition-timing-function;
   -webkit-transition:background $action-transition-duration $action-transition-timing-function;
   -moz-transition:background $action-transition-duration $action-transition-timing-function;
@@ -15,12 +16,13 @@
   .navbar-brand {
     width: 110px;
   }
+
   .navbar-brand-wrapper {
     transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
     -webkit-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
     -moz-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
     -ms-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
-    background: $navbar-bg;
+    background-color: rgb(246, 246, 244);
     width: $sidebar-width-lg;
     height: $navbar-height;
 
@@ -187,7 +189,7 @@
             -moz-box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.2);
             &.navbar-dropdown {
-              position: absolute;            
+              position: absolute;
               font-size: 0.9rem;
               margin-top: 0;
               right: 0;
@@ -350,7 +352,7 @@
         color: $white;
         .nav-profile-text {
           p {
-            @extend .text-white;         
+            @extend .text-white;
           }
         }
         .search-field {
